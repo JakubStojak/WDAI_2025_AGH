@@ -1,0 +1,54 @@
+html {
+      height: 100vh;
+}
+
+body {
+      height: 100vh;
+      margin: 0;
+      color: black;
+      background-color:rgb(193, 223, 226);
+}
+
+.main-container {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+
+
+table {
+  margin: 1em;
+  border: dashed 5px;
+  color:rgb(0, 97, 146)
+}
+
+table th,
+table td {
+  border: solid 3px;
+  color:rgb(0, 0, 0);
+}
+
+.container {
+  display: flex;
+  gap: 10px;          
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid #00000010;
+  border-radius: 6px;
+  margin: auto;  
+}
+
+.sq1 { background: #ff0000; } 
+.sq2 { background: #f1c40f; } 
+.sq3 { background: #2ecc71; } 
+.sq4 { background: #d865a2; } 
+.sq5 { background: #423946; } 
