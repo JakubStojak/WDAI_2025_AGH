@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="contact-page">
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="img/logo.png" alt="logo" class="logo">
+        </div>
+
+        <div class="nav-center">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <span class="brand">Jazz<span>State</span></span>
+        </div>
+    </nav>
+    <main class="contact">
+        <h1>Zapraszamy do kontaktu!</h1>
+        <br>
+        <h3>Twoje zdanie jest dla nas niesamowicie istotne!</h3>
+        <form>
+            <input type="email" name="email" placeholder="Adres mailowy" required>
+            <select name="temat">
+                <option>Zapytanie</option>
+                <option>Współpraca</option>
+                <option>Rekomendacje</option>
+                <option>Inne</option>
+            </select>
+            <textarea name="wiadomosc" placeholder="Treść wiadomości" required></textarea>
+            <input type="submit" value="Wyślij">
+        </form>
+    </main>
+
+    <footer>
+        <p>Jakub Stojak</p>
+        <p id="clock"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

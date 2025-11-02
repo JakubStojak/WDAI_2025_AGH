@@ -16,18 +16,17 @@ body {
       justify-content: center;
 }
 
-
-
 table {
   margin: 1em;
-  border: dashed 5px;
-  color:rgb(0, 97, 146)
+  color:rgb(0, 97, 146);
+  border-collapse: collapse;
 }
 
 table th,
 table td {
   border: solid 3px;
   color:rgb(0, 0, 0);
+  border-collapse: collapse;
 }
 
 .container {

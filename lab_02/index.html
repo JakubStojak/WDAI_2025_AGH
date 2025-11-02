@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja Strona</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="img/logo.png" alt="logo" class="logo">
+    </div>
+
+    
+
+    <div class="nav-center">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <span class="brand">Jazz<span>State</span></span>
+    </div>
+  </nav>
+  <main>
+    <section class="hero">
+      <div>
+        <h2>Muzyka, która zostawia przestrzeń</h2>
+        <p>Jazz to dialog – pomiędzy dźwiękami, emocjami i ludźmi. Poznaj współczesną scenę jazzową.</p>
+        <a href="galeria.html" class="btn">Poznaj artystów</a>
+      </div>
+    </section>
+
+    <section>
+      <h3>Aktualności</h3>
+      <div class="articles">
+        <div class="card">
+          <img src="img/trio.jpg" alt="">
+          <div class="card-content">
+            <h4>Nowy album: Modern Shapes</h4>
+            <p>Eksperymentalny kwartet z Krakowa łączy jazz z elektroniką – album już dostępny.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/aga.jpg" alt="">
+          <div class="card-content">
+            <h4>Recenzja: Aga Derlak Trio</h4>
+            <p>Nowe brzmienie i subtelne kompozycje — minimalistyczny jazz w najlepszym wydaniu.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/jno.png" alt="">
+          <div class="card-content">
+            <h4>Reportaż: Jazz nad Odrą</h4>
+            <p>Bulwary stały się sceną dla artystów młodego pokolenia – zobacz galerię zdjęć.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Wyróżnieni artyści</h3>
+      <div class="artists">
+        <div class="card">
+          <img src="img/mwt.webp" alt="">
+          <div class="card-content">
+            <h4>Marcin Wasilewski Trio</h4>
+            <p>Subtelny, przestrzenny jazz z Polski, rozpoznawalny na całym świecie.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/es.jpg" alt="">
+          <div class="card-content">
+            <h4>Esperanza Spalding</h4>
+            <p>Basistka i wokalistka redefiniująca granice gatunku. Laureatka Grammy.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/Kuba Wiecek Search Result.jpeg" alt="">
+          <div class="card-content">
+            <h4>Kuba Więcek</h4>
+            <p>Jedna z najciekawszych postaci młodej sceny europejskiej. Świeże podejście do improwizacji.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section> <button onclick="toggleText()">Pokaż / Ukryj dzisiejsze motto</button>
+      <h3 id="text">Jazz to nie tylko gatunek. To sposób słuchania, improwizowania i rozmowy między ludźmi.</h3>
+    </section>
+  </main>
+
+  <footer>
+    <p>Jakub Stojak</p>
+    <p id="clock"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
