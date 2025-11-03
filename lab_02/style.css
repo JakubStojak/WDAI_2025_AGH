@@ -3,7 +3,7 @@
 :root {
   --first-color: #000000;
   --second-color: #161e42;
-  --third-color: #4ecca3;  
+  --third-color: #00422c;  
   --fourth-color: #f4f4f4;
   --fifth-color: #ffcc66;  
 }
@@ -339,13 +339,25 @@ input[type="submit"]:hover {
   transform: rotate(-10deg);
 }
 
+
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  padding: 0.5rem 1rem;
+}
+
+
 .nav-center ul {
   display: flex;
   gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap; 
 }
+
 
 .nav-center a {
   color: var(--fourth-color);
@@ -366,8 +378,9 @@ input[type="submit"]:hover {
   padding: 0.2rem 0.8rem;
   border-radius: 0.6rem;
   letter-spacing: 1px;
+  margin: auto;
+  white-space: nowrap; 
 }
-
 .brand span {
   color: var(--first-color);
 }
