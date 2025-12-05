@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Produkty</h2>
+    <button onclick="to_html()">Pobierz</button><br><br>
+    
+    <label>Filtruj:</label>
+    <input type="text" id="filter">
+    <button onclick="filterProducts()">Filtruj</button><br><br>
+
+    <button onclick="sort_asc()">Sortuj Rosnąco</button>
+    <button onclick="sort_desc()">Sortuj Malejąco</button>
+    <button onclick="original_order()">Przywróć oryginalną kolejność</button><br><br>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
