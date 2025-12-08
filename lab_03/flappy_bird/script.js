@@ -225,10 +225,11 @@ function drawGameOverScreen() {
         if (h > board.height * 0.5) { h = board.height * 0.5; w = h * ratio; }
         context.drawImage(gameOverScreenImg, (board.width-w)/2, (board.height-h)/2, w, h);
     }
-    context.fillStyle = "white";
+    context.fillStyle = "black";
     context.textAlign = "center";
     context.font = "24px sans-serif";
     context.fillText(`Score: ${Math.floor(lastScore)}`, board.width/2, board.height/2 + 80);
+    context.fillText(`Best score: ${Math.floor(loadScoresFromStorage()[0])}`);
 }
 
 
