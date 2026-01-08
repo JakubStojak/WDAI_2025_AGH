@@ -96,14 +96,16 @@ app.patch('/api/orders/:id', authenticateToken, async (req, res) => {
         const order = await Orders.findByPk(orderId);
 
         if (!order) {
-            return res.status(404).json({ message: "Nie znaleziono takiego zamówienia." });
+            return res.status(404).json({ message: "Nie znaleziono zamówienia" });
         }
 
         await order.update({ quantity });
 
-        res.json({ message: "Ilość została zaktualizowana", order });
+        res.json({ message: "Zaktualizowano", order });
     } catch (error) {
-        res.status(500).json({ error: "Błąd podczas aktualizacji zamówienia" });
+        console.error("--- LOG BŁĘDU ---");
+        console.error(error); 
+        res.status(500).json({ error: error.message }); 
     }
 });
 
